@@ -1,0 +1,11 @@
+.visual-refresh .title__85643::before {
+    content: "Unsupported UI";
+    height: 16px;
+    color: white;
+    background-color: orange;
+    padding: .3rem;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 72px;
+}
