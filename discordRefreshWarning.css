@@ -1,11 +1,15 @@
+.visual-refresh .title__85643>div {
+    display: none;
+}
+
 .visual-refresh .title__85643::before {
-    content: "Unsupported UI";
+    content: var(--visRefresh-text, "Custom Theme doesnt supported new UI");
     height: 16px;
     color: white;
-    background-color: orange;
-    padding: .3rem;
+    background-color: var(--visRefresh-color, rgb(140, 91, 0));
+    padding: .4rem;
     border-radius: 10px;
 
     position: absolute;
-    left: 72px;
+    z-index: 99;
 }
