@@ -2,8 +2,6 @@ name: Update Classes
 
 on:
   workflow_dispatch:
-  repository_dispatch: #webhook trigger
-    types: [update_class]
 
 jobs:
   classUpdate:
@@ -14,8 +12,7 @@ jobs:
       - id: update
         uses: metro420yt/class-update@v1-rc
         with:
-          folder: stuff
-          ext: scss
+          folder: ./
       - uses: EndBug/add-and-commit@v9
         id: commit
         if: ${{steps.update.outputs.totalChanges > 0}}
